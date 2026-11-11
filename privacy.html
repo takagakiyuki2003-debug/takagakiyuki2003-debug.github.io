@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="description" content="就活監視ヘッダー確認が取得する情報、利用目的、外部サービスへの送信、保存と削除について。"><title>プライバシーポリシー | 就活監視ヘッダー確認</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="header wrap"><a class="brand" href="index.html"><span class="mark" aria-hidden="true">JH</span><span>Job Monitor Headers<small>就活監視ヘッダー確認</small></span></a><nav aria-label="メインメニュー"><a href="index.html">アプリ紹介</a><a href="privacy.html" aria-current="page">プライバシー</a><a href="terms.html">利用規約</a></nav></header>
+  <main id="main" class="document wrap"><p class="eyebrow">DATA &amp; PRIVACY</p><h1>プライバシーポリシー</h1><p class="document-intro">就活監視ヘッダー確認（Job Monitor Headers）は、運営者本人のメールの概要を確認するための個人用アプリです。本ポリシーは、本アプリとその説明サイトにおける情報の取扱いを説明します。</p>
+    <section><h2>1. 運営者と利用目的</h2><p>運営者は <a href="https://github.com/takagakiyuki2003-debug">takagakiyuki2003-debug</a> です。本人が指定したメールのメタデータを取得し、就職活動に関する情報の確認・整理と、取得元の照合に利用します。第三者のGoogleアカウントを対象としたサービスは提供していません。</p></section>
+    <section><h2>2. 取得する情報</h2><p>Googleの認証を経て、Gmail APIの <code>gmail.metadata</code> 権限を使用します。取得対象には次の情報が含まれます。</p><ul><li>送信元（From・Sender）、件名（Subject）、メールヘッダーの日時（Date）、Message-ID。</li><li>GmailのメッセージID、スレッドID、履歴ID、受信日時、ラベルID。</li><li>接続先の確認に用いるGoogleアカウントのメールアドレス。</li><li>接続の維持に必要なOAuth認証情報、およびエラーコードや実行時刻などの接続診断情報。</li></ul><p>メール本文、プレビュー（snippet）、添付ファイルは取得しません。メールの送信、削除、既読化、ラベル変更は行いません。</p></section>
+    <section><h2>3. 処理と外部サービスへの送信</h2><p>メタデータは本人のPCで取得され、中継接続を通じてOpenAIのChatGPT/Codexに送られます。送信は、本人が依頼した確認結果の表示・整理のために行います。中継を提供するサービスも、この通信の処理に関わります。</p><p>OAuth認証情報はGoogleとの認証に使用します。メール確認ツールの回答や、この公開サイトには掲載しません。</p><p>本アプリを通じたGoogleデータの取扱いは、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Useの要件を含む）に従い、本人に示した確認・整理の目的に限定します。運営者は、Googleデータを販売したり、広告配信に利用したりしません。</p></section>
+    <section><h2>4. 保存と保持</h2><p>継続接続に必要な認証情報は、本人のWindows PC上でWindowsの暗号化機能を使用して保存します。取得したメタデータは処理中に使用され、返却先の会話履歴やツール実行履歴に残る場合があります。接続状態・診断情報はPC側の運用記録に残る場合があります。</p><p>本人の承認により確認結果を別の台帳やファイルへ保存する場合、その保存先でも保持されます。Gmailヘッダー取得ツール自体はGoogle Sheetsへの書き込み機能を持ちません。</p><p>本アプリには、外部サービスの会話履歴や別途保存された台帳を一括で自動削除する機能はありません。保持期間は、本人の削除操作と各保存先の設定・規約に従います。OpenAIや中継サービスによる取扱いには、それぞれのサービスのポリシーと利用設定も適用されます。</p></section>
+    <section><h2>5. 利用停止と削除</h2><p>本人はPC中継の利用を停止し、Googleアカウントで本アプリへのアクセス許可を取り消すことができます。アクセス許可の取消しと、既に保存された情報の削除は別の操作です。</p><p>不要になったPC上の認証情報・診断記録、外部サービスの会話履歴、本人が保存した台帳などは、それぞれの保存先で削除します。削除については下記の連絡先へ問い合わせることもできます。</p></section>
+    <section><h2>6. この説明サイト</h2><p>このサイトには、Googleログイン、メール情報の入力フォーム、アクセス解析タグ、広告、独自のCookie保存処理を設置していません。GitHub Pagesで公開された場合、配信元のGitHubがアクセス時のIPアドレスなどを処理することがあります。詳細は<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシー声明</a>をご覧ください。</p></section>
+    <section><h2>7. 変更と連絡先</h2><p>取得項目や利用目的を変更する場合、本ポリシーとアプリの説明を更新し、必要な同意を得てから変更後の取扱いを開始します。</p><p>運営者：<a href="https://github.com/takagakiyuki2003-debug">takagakiyuki2003-debug</a><br>連絡先：Googleの認証画面に表示される本アプリのユーザーサポートメール。</p><p class="updated">最終更新日：2026年11月11日</p></section>
+  </main>
+  <footer class="footer wrap"><span>Job Monitor Headers · 個人運営</span><div><a href="index.html">アプリ紹介</a><a href="terms.html">利用規約</a></div></footer>
+</body>
+</html>
